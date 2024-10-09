@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#fondo{
+    background-image: url(./imagenes/Wing_It_Banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    position: relative;
+    top: 75px;
+}
+
+.logo img {
+    border-radius: 5px;
+}
+
+.barra{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;  
+    border-bottom: #b4b4b4 solid 0.5px; 
+    height: 35px;
+    cursor: pointer;
+}
+
+#carrito{
+    position: relative;
+}
+
+.barra div{
+    margin-right: 50px;
+    margin-top: 10px;
+    padding: 0%;
+    list-style: none;
+}
+
+.barra1{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;  
+}
+
+.img1{
+    width: 20px;
+    height: 20px;
+}
+
+#ventanaCarrito{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: auto;
+    background-color: rgb(250, 203, 62);
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+}
+
+.ventana{
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#productos{
+    margin-bottom: 10px;
+    margin-right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    padding-right: 4px;
+    padding-left: 4px;   
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#precios{
+    margin-bottom: 10px;
+    margin-right: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;        
+}
+
+.pedidos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #515151;
+    background-color: rgb(232, 232, 232);
+    border: solid 1px rgb(70, 70, 70);
+    height: fit-content;
+    width: fit-content; 
+    padding-right: 4px;
+    padding-left: 4px; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.totalLimpiar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sinMargen{
+    margin: 0%;
+}
+
+section {
+    margin: 60px;
+}
+
+h2 {
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.combo {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+.combo img {
+    width: 100%;
+    height: auto;
+}
+
+figure{
+    height: 130px;
+    width: 80px;
+}
+
+.combo:hover {
+    background-color: #f0f0f0;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+button{
+    border-radius: 10px;
+    border: 1px solid #b4b4b4;
+    background-color: #fee313;
+    color: #6b6b6b;
+}
+
+.proximamente{
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
