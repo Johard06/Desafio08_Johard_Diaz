@@ -93,6 +93,7 @@ function botonReset() {
     productoSeleccionado.innerHTML = '';
     precios.innerHTML = '';
     sumaTotal = 0;
+    
     document.getElementById('total').textContent = sumaTotal;};
 
 document.getElementById('botonReset').addEventListener('click', botonReset);

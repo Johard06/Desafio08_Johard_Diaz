@@ -128,6 +128,22 @@ body {
     margin: 0%;
 }
 
+#ventanaIniciarSesion{
+    display: none;
+    position: absolute;
+    top: 36.3%;
+    left: 83%;
+    transform: translateX(-50%);
+    width: 350px;
+    height: auto;
+    background-color: rgb(250, 203, 62);
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+}
+
 section {
     margin: 60px;
 }
