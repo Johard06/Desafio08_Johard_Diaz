@@ -2,8 +2,13 @@
 const iniciarSesion = document.getElementById('iniciarSesion');
 const ventanaIniciarSesion = document.getElementById('ventanaIniciarSesion');
 
-iniciarSesion.addEventListener('click', function () {
-   if (ventanaIniciarSesion.style.display === 'none') {
-        ventanaIniciarSesion.style.display = 'block';} 
+function abrirVentana () {
+    ventanaIniciarSesion.style.display = 'block';
+};
 
-    else {ventanaIniciarSesion.style.display = 'none';}});
+function cerrarVentana() {
+    ventanaIniciarSesion.style.display = 'none';
+};
+
+iniciarSesion.addEventListener('click', abrirVentana);
+iniciarSesion.addEventListener('dblclick', cerrarVentana);

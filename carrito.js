@@ -1,7 +1,7 @@
 
 
 const carrito = document.getElementById('carrito');
-const ventana = document.getElementById('ventanaCarrito');
+const ventanaCarrito = document.getElementById('ventanaCarrito');
 
 const agregarAlCarrito = document.querySelectorAll('.agregarAlCarrito');
 const contador = document.getElementById('contadorDelCarrito');
@@ -16,14 +16,24 @@ const productoSeleccionado = document.getElementById('productos');
 const precios = document.getElementById('precios');
 
 let montos = [5, 10, 8, 8, 10];
-let sumaTotal = 0;
+let sumaTotal = 0.00;
+
+const botonOrdenar = document.getElementById('ordenar');
+const ventanaDireccion = document.getElementById('ventanaDireccion');
+const overlay = document.getElementById('overlay');
+const botonCancelarPedido = document.getElementById('cancelarPedido');
+
+function abrirVentana() {
+    ventanaCarrito.style.display = 'block';
+};
+
+function cerrarVentana() {
+    ventanaCarrito.style.display = 'none'
+}
 
 
-carrito.addEventListener('click', function() {
-    if (ventana.style.display === 'none') {
-        ventana.style.display = 'block';} 
-    
-    else {ventana.style.display = 'none';}});
+carrito.addEventListener('click', abrirVentana);
+carrito.addEventListener('dblclick', cerrarVentana)
 
 agregarAlCarrito.forEach(function(agregar) {
     agregar.addEventListener('click', function() {
@@ -92,13 +102,23 @@ agregarCombo5.addEventListener('click', () => sumarAlTotal(4));
 function botonReset() {
     productoSeleccionado.innerHTML = '';
     precios.innerHTML = '';
-    sumaTotal = 0;
+    sumaTotal = 0.00;
     
     document.getElementById('total').textContent = sumaTotal;};
 
 document.getElementById('botonReset').addEventListener('click', botonReset);
 
+function abrirVentanaDireccion() {
+    ventanaDireccion.style.display = 'block';
+    overlay.style.display = 'block';
+};
 
+function cerrarVentanaDireccion() {
+    ventanaDireccion.style.display = 'none';
+    overlay.style.display = 'none';
+};
 
+botonOrdenar.addEventListener('click', abrirVentanaDireccion);
+botonCancelarPedido.addEventListener('Click', cerrarVentanaDireccion);
 
 
